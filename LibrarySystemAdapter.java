@@ -1,11 +1,12 @@
-public class LibrarySystem implements SchoolManagementApp {
+public class LibrarySystemAdapter implements SchoolManagementApp {
     private LibrarySystem librarySystem;
 
-    public void LibrarySystem(LibrarySystem librarySystem){
-        this.librarySystem = librarySystem ;
+    public LibrarySystemAdapter(LibrarySystem librarySystem) {
+        this.librarySystem = librarySystem;
     }
 
-    public void  integrateSystem() {
-        attendanceSystem. manageBooks();
+    @Override
+    public void integrateSystem() {
+        librarySystem.manageBooks();
     }
 }
