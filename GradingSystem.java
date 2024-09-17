@@ -1,5 +1,5 @@
 public class GradingSystem {
-    public String recordGrades() {
-        return "Recording grades..";
+    public void recordGrades() {
+    System.out.print("Recording Grades...");
     }
 }
