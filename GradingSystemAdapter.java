@@ -1,10 +1,12 @@
-public class GradingSystemAdapter implements SystemInt {
+public class GradingSystemAdapter implements SchoolManagementApp {
     private GradingSystem gradingSystem;
 
-    public GradingSystemAdapter (GradingSystem gradingSystem) {
+    public GradingSystemAdapter(GradingSystem gradingSystem) {
         this.gradingSystem = gradingSystem;
     }
-    public String integrateSystem() {
-        return gradingSystem.recordGrades();
+
+    @Override
+    public void integrateSystem() {
+        gradingSystem.recordGrades();
     }
 }
